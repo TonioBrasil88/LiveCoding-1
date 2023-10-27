@@ -1,0 +1,263 @@
+/*GENERAL SETTINGS */
+
+* {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: var(--witheCus) ;
+}
+
+@font-face {
+    font-family: MgsFont;
+    src: url(./media/Gotham-Medium.otf);
+
+    font-family: Konami;
+    src: url(./media/KonSystem.ttf);
+}
+
+h1 {
+    font-family: Konami;
+    background: -webkit-linear-gradient(#AC0000, #504040);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-family: Konami;
+    background: -webkit-linear-gradient(#DAC8C7, #ac8a32);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3, h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #DAC8C7;
+}
+
+/* ROOT - INDICA LE VARIABILI*/
+
+:root {
+    --main: #AC0000;
+    --sec: #504040;
+    --accent: #ac8a32;
+    --witheCus: #DAC8C7;
+    --blackCus: #111110;
+}
+
+/* colore testi */
+
+.text-main {
+    color: #AC0000;
+}
+
+.text-sec {
+    color: #504040;
+}
+
+
+.text-accent {
+    color: #F1D725;
+}
+
+.text-witheCus {
+    color: #DAC8C7;
+    font-family: Konami;
+}
+
+.text-blackCus {
+    color: #111110;
+}
+
+/* background color */
+
+.bg-main {
+    background-color: var(--main);
+}
+
+.bg-sec {
+    background-color: var(--sec);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.bg-witheCus {
+    background-color: var(--witheCus);
+}
+
+.bg-blackCus {
+    background-color: var(--blackCus);
+}
+
+/* border color */
+
+.border-main {
+    border: solid 2px var(--main);
+}
+
+.border-sec {
+    border: solid 2px var(--sec);
+}
+
+.border-accent {
+    border: solid 2px var(--accent);
+}
+
+.border-witheCus {
+    border: solid 2px var(--witheCus);
+}
+
+.border-blackCus {
+    border: solid 2px var(--blackCus);
+}
+
+/* NAVBAR */
+
+.logo {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.button {
+    width: 40px;
+    margin-left: 50px;
+}
+
+.nav-link {
+    color: var(--accent);
+    font-size: 23px;
+}
+
+.nav-link:hover {
+    color: var(--witheCus);
+}
+
+/* HEADER */
+
+.bg-cus {
+    background: linear-gradient(rgba(80, 64, 64, 0.433), rgba(218, 200, 199, 0.433)), url(./media/mgsv-tpp.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo2 {
+    height: 35px;
+}
+
+.btn{
+    margin-left: 360px;
+    margin-top:20px ;
+}
+
+.btn:hover {
+    background-color: var(--blackCus);
+    border: 2px solid var(--accent);
+    color: var(--witheCus);
+    
+}
+
+.nav-custom {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 5; 
+}
+
+@media screen and (min-width: 600px) {
+
+    .nav-custom {
+        position: sticky;
+        top: 0px;
+    }
+}
+
+/* TIMELINE */
+
+.border-right {
+    border-right:2px solid var(--blackCus) ;
+}
+
+.border-leftt {
+    border-left:2px solid var(--blackCus) ;
+}
+
+.pseudo-right, .pseudo-left {
+    position: relative;
+}
+
+.pseudo-right::after {
+    content:"";
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: #AC0000;
+    border: 2px solid var(--accent);
+    position: absolute;
+    right: -20px;    
+    z-index: index 1; 
+}
+
+.pseudo-left::before {
+    content:"";
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: #AC0000;
+    border: 2px solid var(--accent);
+    position: absolute;
+    left: -20px;
+    z-index: index 5; 
+}
+
+
+/* section position */
+
+.pos-left {
+    position: relative;
+    top: -25px;
+    left: 20px;
+    background-color: var(--sec);
+    transition: 0.4s;
+}
+
+.pos-left:hover {
+    top: 0px;
+    left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .pos-left {
+        position: static;}
+
+    .footer-cus {
+        display: none;
+    }
+    
+    .dimension { 
+        margin-top: 150px;
+    }
+}
+
+/* order */
+
+.img-cus {
+    width: 300px;
+    height: 300px;
+}
+
+/* footer custom */
+
+.footer-cus {
+    min-height: 100px;
+
+}
+
+.border-sec-right {
+    border-right: 2px solid var(--witheCus);
+
+}
